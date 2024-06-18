@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IMC</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <video autoplay muted loop playsinline id="bgVideo">
+    <source src="certo1.mp4" type="video/mp4">
+    Seu navegador não suporta vídeos.
+  </video>
+  <div class="content">
+    <div class="input-box">
+      <input type="number" id="altura" placeholder="Altura em metros (ex: 1.75)" step="0.01">
+      <input type="number" id="peso" placeholder="Peso em quilogramas (ex: 75)" step="0.1">
+      <input type="number" id="idade" placeholder="Idade" step="1">
+      <button onclick="calcularIMC()">Calcular IMC</button>
+    </div>
+    <div class="info-box">
+      <div>
+        <h3>O que é IMC?</h3>
+        <p>O cálculo do IMC (Índice de Massa Corporal) é uma medida padrão internacional usada para avaliar se uma pessoa está dentro de uma faixa de peso considerada saudável em relação à sua altura.</p>
+      </div>
+      <div>
+        <h3>A importância da idade no IMC</h3>
+        <p>A idade é um fator relevante na análise do IMC, pois o corpo humano muda sua composição ao longo dos anos.</p>
+      </div>
+      <div>
+        <h3>Limitações do IMC</h3>
+        <p>O IMC não diferencia massa gorda de massa muscular, o que pode levar a interpretações errôneas da saúde de atletas ou pessoas mais musculosas.</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
